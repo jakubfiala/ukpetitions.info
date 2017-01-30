@@ -1,0 +1,36 @@
+{
+  "name": "ukpetitions.info",
+  "version": "1.0.0",
+  "description": "Interactive visualisations and statistics of the UK e-petitions data",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakubfiala/ukpetitions.info.git"
+  },
+  "keywords": [
+    "visualisation",
+    "uk",
+    "data"
+  ],
+  "author": "jakubfiala",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jakubfiala/ukpetitions.info/issues"
+  },
+  "homepage": "https://github.com/jakubfiala/ukpetitions.info#readme",
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-inferno": "^1.7.0",
+    "babel-preset-latest": "^6.22.0",
+    "babel-regenerator-runtime": "^6.5.0",
+    "d3-path": "^1.0.3",
+    "inferno": "^1.2.2",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
