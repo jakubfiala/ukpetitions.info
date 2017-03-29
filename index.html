@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ukpetitions.info</title>
   <script type="text/javascript" defer src="dist/bundle.js"></script>
   </head>
@@ -9,21 +10,111 @@
     body, html {
       margin: 0;
       padding: 0;
+      font-family: sans-serif;
+    }
+
+    header,
+    section {
+      padding: 0 20px;
+    }
+
+    main {
+
+    }
+
+    section {
+      line-height: 1.5;
+    }
+
+    footer {
+      font-size: small;
+      padding: 20px;
+      border-top: solid 1px #ddd;
     }
 
     figure {
-      box-sizing: border-box;
       margin: 0;
+      height: 100%;
+      background: #008800;
+      height: 75vh;
+      min-height: 300px;
     }
 
     svg {
-      width: 1000%;
-      height: 100vh;
+      width: 80%;
+      height: 100%;
+      box-sizing: border-box;
+      margin: 10px auto;
+      padding: 25px 0;
+      display: block;
+      cursor: ns-resize;
+    }
+
+    path {
+      transform-origin: center bottom;
+      transform: scaleY(0);
+      transition: transform 0.75s 0.5s;
+    }
+
+    svg.animated path {
+      transform: scaleY(1);
+    }
+
+    .header__petitions-count {
+      font-size: x-large;
+    }
+
+    .inline-stats {
+      font-weight: 300;
+      color: #555;
+    }
+
+    .inline-stats strong {
+      font-weight: 500;
+    }
+
+    ol {
+      padding-left: 0;
+      list-style-position: inside;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #008800;
+    }
+
+    a:visited,
+    a:active {
+      color: #008800;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-logo {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 1em;
+      height: 20px;
     }
   </style>
   <body>
     <noscript>This site only works with JavaScript, because it pulls data from external sources. Go to <a href="https://petition.parliament.uk/petitions">the official Parliament petitions site</a> for non-Javascript access.</noscript>
-    <main id="ukpi"></main>
+    <main id="ukpi">
+      <header>
+        <h1>ukpetitions.info</h1>
+      </header>
+      <figure></figure>
+    </main>
+    <footer>
+      <img class="footer-logo" src="http://www.nationalarchives.gov.uk/images/infoman/ogl-symbol-41px-retina-black.png" alt="Open Government License logo" />
+      <span>Data licensed under the Open Government License.</span>
+    </footer>
   </body>
 </html>
 
